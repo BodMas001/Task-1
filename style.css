@@ -1,0 +1,115 @@
+/* style.css */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1f2933;
+    color: #cfd4e1;
+  }
+  
+  .app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .advice-card {
+    text-align: center;
+    background-color: #323a49;
+    padding: 40px 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 450px;
+    position: relative;
+  }
+  
+  .advice-id {
+    color: #53ffaa;
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    margin-bottom: 20px;
+  }
+  
+  .advice-display {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 20px 0;
+    padding: 0 10px;
+  }
+  
+  .divider {
+    width: 80%;
+    height: 1px;
+    background-color: #4e5d73;
+    margin: 20px auto;
+    position: relative;
+  }
+  
+  .divider::before,
+  .divider::after {
+    content: '';
+    width: 5px;
+    height: 10px;
+    background-color: #4e5d73;
+    position: absolute;
+    top: -4px;
+  }
+  
+  .divider::before {
+    left: 50%;
+    transform: translateX(-20px);
+  }
+  
+  .divider::after {
+    right: 50%;
+    transform: translateX(20px);
+  }
+  
+  .dice-button {
+    background-color: #53ffaa;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    transition: box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out;
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .dice-button img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .dice-button:hover {
+    box-shadow: 0px 0px 20px rgba(83, 255, 170, 0.5);
+    transform: scale(1.1);
+  }
+  
+  
+  @media (max-width: 400px) {
+    .advice-card {
+      padding: 20px;
+    }
+    .advice-display {
+      font-size: 20px;
+    }
+    .advice-id {
+      font-size: 12px;
+    }
+  }
